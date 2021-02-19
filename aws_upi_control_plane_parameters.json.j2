@@ -13,7 +13,7 @@
   },
   {
     "ParameterKey": "PrivateHostedZoneId",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ PrivateHostedZoneId }}"
   },
   {
     "ParameterKey": "PrivateHostedZoneName",
@@ -21,19 +21,19 @@
   },
   {
     "ParameterKey": "Master0Subnet",
-    "ParameterValue": "{{ private_subnet }}"
+    "ParameterValue": "{{ PrivateSubnets }}"
   },
   {
     "ParameterKey": "Master1Subnet",
-    "ParameterValue": "{{ private_subnet }}"
+    "ParameterValue": "{{ PrivateSubnets }}"
   },
   {
     "ParameterKey": "Master2Subnet",
-    "ParameterValue": "{{ private_subnet }}"
+    "ParameterValue": "{{ PrivateSubnets }}"
   },
   {
     "ParameterKey": "MasterSecurityGroupId",
-    "ParameterValue": "sg-XXXX"
+    "ParameterValue": "{{ MasterSecurityGroupId }}"
   },
   {
     "ParameterKey": "IgnitionLocation",
@@ -45,7 +45,7 @@
   },
   {
     "ParameterKey": "MasterInstanceProfileName",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ MasterInstanceProfile }}"
   },
   {
     "ParameterKey": "MasterInstanceType",
@@ -57,18 +57,18 @@
   },
   {
     "ParameterKey": "RegisterNlbIpTargetsLambdaArn",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ RegisterNlbIpTargetsLambda }}"
   },
   {
     "ParameterKey": "ExternalApiTargetGroupArn",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ ExternalApiTargetGroupArn }}"
   },
   {
     "ParameterKey": "InternalApiTargetGroupArn",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ InternalApiTargetGroupArn }}"
   },
   {
     "ParameterKey": "InternalServiceTargetGroupArn",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ InternalServiceTargetGroupArn }}"
   }
 ]

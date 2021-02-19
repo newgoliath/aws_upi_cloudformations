@@ -13,15 +13,15 @@
   },
   {
     "ParameterKey": "PublicSubnet",
-    "ParameterValue": "{{ public_subnet }}"
+    "ParameterValue": "{{ PublicSubnets }}"
   },
   {
     "ParameterKey": "MasterSecurityGroupId",
-    "ParameterValue": "sg-XXXX"
+    "ParameterValue": "{{ MasterSecurityGroupId }}"
   },
   {
     "ParameterKey": "VpcId",
-    "ParameterValue": "{{ vpc_id }}"
+    "ParameterValue": "{{ VpcId }}"
   },
   {
     "ParameterKey": "BootstrapIgnitionLocation",
@@ -33,19 +33,19 @@
   },
   {
     "ParameterKey": "RegisterNlbIpTargetsLambdaArn",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ RegisterNlbIpTargetsLambda }}"
   },
   {
     "ParameterKey": "ExternalApiTargetGroupArn",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ ExternalApiTargetGroupArn }}"
   },
   {
     "ParameterKey": "InternalApiTargetGroupArn",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ InternalApiTargetGroupArn }}"
   },
   {
     "ParameterKey": "InternalServiceTargetGroupArn",
-    "ParameterValue": "XXXX"
+    "ParameterValue": "{{ InternalServiceTargetGroupArn }}"
   }
 ]
 
